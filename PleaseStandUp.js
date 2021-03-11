@@ -1,13 +1,15 @@
 class PleaseStandUp {
 
     /*
-    Have the function howOld(birthday) take the birthday parameter being passed and 
-    return the age of a person with the date as their birthday.
-    (ie. if birthday = June 22, 1996 then the output should be 24)
+    Have the function howOld(birthday) take the birthday parameter being passed and return the age of a person with the date as their birthday. (ie. if birthday = June 22, 1996 then the output should be 24)
     */
 
    howOld(birthday){
-        return -1;
+    // if month, day, and year are same as birth month, birth day and birth year, then happy birthday
+    // if year is less than birth year, then you haven't been born yet    
+    // if year is greater than birth year and month is greater than birth month, then subtract birth year from year
+
+       return -1;
     }
 
     /*
@@ -18,7 +20,18 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+    // divide the numOfMins by 60 (60 min in 1 hour) and round down to make hours a whole number
+        let hours = Math.floor(numOfMin / 60);
+    // use numOfMins modulus 60 (modulus returns only the remainder which is minutes) round down to make it a whole number
+        let minutes = Math.floor(num % 60);
+        //console.log(63.5 % 60); = 3.5 so added math.floor
+    // 
+        
+    
+    //Position hours variable on left of ':', minutes variable between two colons and seconds variable to far right of colon.
+        return `${hours}:${minutes}:${seconds}`;
     }
 
 }
+
+module.exports = PleaseStandUp;
