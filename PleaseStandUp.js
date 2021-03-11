@@ -7,7 +7,14 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
-        return -1;
+
+         // Enter today's date
+       // Enter your age in the format of month, day and year
+       // calculate the difference of age from today's date
+       // convert difference in desired date format
+       // pick year from the whole value of difference
+
+       // return -1;
     }
 
     /*
@@ -17,8 +24,28 @@ class PleaseStandUp {
     minutes, and seconds with colons.
     */
 
-    timeConvert(numOfMins){
-        return -1;
+    timeConvert(value){
+        // create variable to get output of time
+        let time;
+        
+        // calculate hours and round down the value 
+    let hours = Math.floor(value / 60);
+
+    // calculate minutes from remainder value and round down
+    let minutes = Math.floor(value % 60);
+
+    // calculate seconds in a decimal format
+    let secD = value % 1;
+
+    // convert seconds result from a decimal to an integer value
+    let secI = Math.floor(60 * secD);
+
+    // find time in hours, minutes and sec format separated by colon
+    time = hours + ":" + minutes + ":" + secI;
+
+    // bring the result of time
+    return time;
+
     }
 
 }
