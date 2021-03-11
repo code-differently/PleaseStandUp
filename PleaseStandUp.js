@@ -33,7 +33,18 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
+        // create var for hours, minutes and seconds
+        
+        if (numOfMins > 60){
+        let hours = Math.floor(numOfMins / 60)
+        let minutes = numOfMins % 0
+        let seconds = 
+         console.log(`${hours}:${minutes}` )
+         
+
         return -1;
     }
 
 }
+
+module.exports = PleaseStandUp;
