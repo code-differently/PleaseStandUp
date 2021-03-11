@@ -44,8 +44,6 @@ class PleaseStandUp {
         seconds = Math.floor(seconds * 60);
         let results = `${hours}:${minutes}:${seconds}`;
         return results;
-        // also return `${parseInt{num / 60}, 10)}:${num % 60}`
-
     }
 
 }
