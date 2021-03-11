@@ -32,14 +32,17 @@ class PleaseStandUp {
     // calculate mins
     let mins = Math.floor(numOfMins % 60);
 
-    // calculate secs
-    let sec = 60 * .05;
+    // capture secs in a decimal form
+    let secDec = numOfMins % 1;
+
+    // convert secs from a decimal to an integer
+    let secInt = Math.floor(60 * secDec);
 
     // output result
-    timeConversion = `${hours}:${mins}:${sec}`;
+    timeConversion = `${hours}:${mins}:${secInt}`;
 
-    console.log(sec);
-    //return timeConversion;
+    //console.log(secInt);
+    return timeConversion;
     }
 
 }
