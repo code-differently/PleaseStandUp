@@ -7,6 +7,21 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
+       // create variable for the age
+       // create variable for the birthyear
+       // use the built in methods that returns the current year
+       // create funtion that will seperate the year in the given birthday by grabbing
+       // the last four indeces
+       // store the last four indeces in birthyear varible
+       // declare birthyear as a number
+       // create function that will subtract current year from birthyear and make equal to age var
+       // create function that will pull the month and date from given birthday and 
+       // equal to a variable created for that
+       // use built in method for current month and day
+       // create if/else statement that will compare current month/day to birth month/day.
+       // if current is > than birth mpnth/day then return age. if opposite, return age -1
+
+
         return -1;
     }
 
