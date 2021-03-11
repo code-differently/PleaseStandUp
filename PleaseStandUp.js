@@ -6,8 +6,13 @@ class PleaseStandUp {
     (ie. if birthday = June 22, 1996 then the output should be 24)
     */
 
-   howOld(birthday){
-        return -1;
+   howOld(birthday) {
+    // ask user to provide the date they were born
+
+    // take the bithdate the user provided and calculate how old they are based on the current date
+
+    // output result
+       
     }
 
     /*
@@ -18,7 +23,25 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+    // create a placeholder to capture end result
+    let timeConversion;
+    
+    // calculate hours
+    let hours = Math.floor(numOfMins / 60);
+
+    // calculate mins
+    let mins = Math.floor(numOfMins % 60);
+
+    // calculate secs
+    let sec = 60 * .05;
+
+    // output result
+    timeConversion = `${hours}:${mins}:${sec}`;
+
+    console.log(sec);
+    //return timeConversion;
     }
 
 }
+
+module.exports = PleaseStandUp;
