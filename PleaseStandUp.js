@@ -7,7 +7,16 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
-        return -1;
+
+    //declare variable difining birthdate 
+    // create a condition statement saying if that is the birtday is equal to birth date 
+       let birthdate = new Date('june 22, 1996');
+       let age = 0;
+       for(let i = 0; i = )
+       if(birthday === birthdate){
+           return birthdate;
+       }
+      
     }
 
     /*
@@ -18,7 +27,20 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+        // declare 3 variables defining hours/ minutes / seconds 
+        // loop thru the minutes and divide by 60 
+        // calculate minutes 
+        //calculate secondons 
+        //concat hours / minutes / seconds 
+        // return varialble 
+        let time =  
+        let hours = ;
+        let minutes = ;
+        let seconds = ;
+
+        for (let i = 0; i <= time; i ++ )
+
+        return time;
     }
 
 }
