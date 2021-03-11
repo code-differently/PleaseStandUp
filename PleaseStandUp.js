@@ -6,7 +6,16 @@ class PleaseStandUp {
     (ie. if birthday = June 22, 1996 then the output should be 24)
     */
 
-   howOld(birthday){
+    howOld(birthday) {
+        // store the birthday parameter in a variable
+        // convert string to integer
+        // if today's month and day is after given birth month and day
+        // subtract birth year from today's year
+        // return integer
+        // or else if today's month and day is before given birth month and day,
+        // subtract birth year from today's year
+        // subtract 1
+        // return integer  
         return -1;
     }
 
@@ -17,8 +26,23 @@ class PleaseStandUp {
     minutes, and seconds with colons.
     */
 
-    timeConvert(numOfMins){
-        return -1;
+    timeConvert(numOfMins) {
+        // store numOfMins in a variable
+        // minutes equals seconds  by 60 
+        // dividing by 60 counts hours before decimal or remainder
+        // what's left as a whole integer counts minutes
+        // the remainder counts seconds
+        // return results 
+
+        let hours = Math.floor(numOfMins / 60);
+        let minutes = Math.floor(numOfMins % 60);
+        let seconds = Math.floor(minutes / 60);
+        let results = `${hours}:${minutes}:${seconds}`;
+        return results;
+        // also return `${parseInt{num / 60}, 10)}:${num % 60}`
+
     }
 
 }
+
+module.exports = PleaseStandUp;
