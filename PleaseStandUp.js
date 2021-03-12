@@ -9,18 +9,21 @@ class PleaseStandUp {
    howOld(birthday){
 
         
-        //current date
+        //get current date check if it's a leap year
+
         //getFullYear()	Get the year as a four digit number (yyyy)  
+
         // getMonth() Get the month as a number (0-11)
-        //getMonth()	Get the month as a number (0-11)
 
-        //map months in words as a number
+        //getDay()	Get the day as a number (1-31)
 
-        //format input with current date format 
+        //map months in words as a number (0-11)
 
         //calculate difference between year, 
         
-        //compare difference between months, date for precission
+        //compare difference between months if result is less than 0 subract from year if equal to 0 move to next condition
+
+        //if difference between months is equal to 0 compare dates if less than or  to 0 subtract from year
 
         //print result
 
@@ -42,9 +45,8 @@ class PleaseStandUp {
         //convert to mins
         const minutes = Math.floor(numOfMins % 60);
         //convert to seconds
-        const seconds =  Math.floor((numOfMins % 1) *60);
+        const seconds =  Math.trunc((numOfMins % 1) *60);
         //print result
-
         return `${hour}:${minutes}:${seconds}`;
     }
 
