@@ -7,7 +7,14 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
-        return -1;
+    // convert string into date format 
+    
+    // put today's date in a variable
+    
+    // subtract today's date from the date enterted
+        
+    // convert to years/integer
+        
     }
 
     /*
@@ -18,9 +25,20 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+    // get the hours
+    let hours =  Math.floor(numOfMins / 60);
+    // get the minutes using modulus
+    let minutes = Math.floor(numOfMins % 60);
+    // get the number of seconds 
+    let seconds = (numOfMins % 1) * 60;
+    // use Math.floor to remove decimal
+    seconds = Math.floor(seconds);
+    // return everything added together for output
+    return `${hours}:${minutes}:${seconds}`;
+}
+        
     }
 
-}
+
 
  module.exports = PleaseStandUp;
