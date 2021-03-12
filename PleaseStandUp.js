@@ -5,6 +5,10 @@ class PleaseStandUp {
     return the age of a person with the date as their birthday.
     (ie. if birthday = June 22, 1996 then the output should be 24)
     */
+   //Create a function to calculate the age (calcAge)
+   //Create a variable using the date of birth
+   //Create in "if" statement using the date of birth and current date.
+
 
    howOld(birthday){
         return -1;
@@ -18,9 +22,22 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+    //Get hours by dividing num by 60 to get whole number of hours
+    //use the Math.floor 
+        var hours = Math.floor(num / 60); 
+    
+    // Use remainder after division
+        var minutes = num % 60; 
+
+    //Calculate remainder in seconds
+        var seconds = minutes % 60
+    
+    //Combine hours, minutes, and seconds in required format (HH:MM:SS) and return as answer
+        return hours + ":" + minutes + ":" + seconds;     
+     
+}
+
     }
 
-}
 
  module.exports = PleaseStandUp;
