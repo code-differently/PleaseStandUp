@@ -6,9 +6,19 @@ class PleaseStandUp {
     (ie. if birthday = June 22, 1996 then the output should be 24)
     */
 
+    //take current year minus 1 and subtract that by the input year  1996 - 2020 = 24
+    //associate months with numerical values.
+    //if current month is less than input month return  value from first step
+    //if current month is greater then input month return value from first step and add 1
+
+
+
+
    howOld(birthday){
         return -1;
     }
+
+
 
     /*
     Have the function timeConvert(numOfMins) take the numOfMins parameter being passed and 
@@ -17,8 +27,13 @@ class PleaseStandUp {
     minutes, and seconds with colons.
     */
 
-    timeConvert(numOfMins){
-        return -1;
+    timeConvert(num){
+        let h = Math.floor(num/60);
+        let m = Math.floor(num - (h * 60));
+        let numOfMins = (h * 60) + m;
+        let s = Math.floor((num - numOfMins) * 60);
+
+        return (h+":"+m+":"+s);
     }
 
 }
