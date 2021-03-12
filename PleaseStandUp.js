@@ -7,6 +7,10 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
+       // First begin with today's date (the only way to know age, is to know the current date)
+       // Find the subject's birth date
+       // Subtract the subject's date of birth from today's date
+       // Display result
         return -1;
     }
 
@@ -18,6 +22,14 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
+        // Divide minutes by 60, to calculate the number of hours
+       let hours = Math.floor(num/60);
+       // The remaining minutes will serve as the remainder of the equation
+       let minutes = num % 60;
+       // Multiply the right side of decimal by 60, to calculate number of seconds
+       // Return hours:minutes:seconds
+       let results = hours + ":" + minutes + ":" + seconds;
+       return results;
         return -1;
     }
 
