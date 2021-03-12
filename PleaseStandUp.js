@@ -7,6 +7,16 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
+
+        //map month from word to integer
+
+        //get todays date
+
+        //format input with todays date format
+
+        //calculate difference
+
+        //print result
         return -1;
     }
 
@@ -18,9 +28,19 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+
+        //convert to hour
+        const hour = Math.floor(numOfMins / 60);
+        //convert to mins
+        const minutes = Math.floor(numOfMins % 60);
+        //convert to seconds
+        const seconds =  Math.floor(((numOfMins - (Math.floor(numOfMins))) * 60));
+        //print result
+
+        return `${hour}:${minutes}:${seconds}`;
     }
 
 }
 
  module.exports = PleaseStandUp;
+
