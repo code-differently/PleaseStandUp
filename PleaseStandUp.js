@@ -7,6 +7,10 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
+    //    you want to take the birthday & put it in a string
+    // make a variable called age
+    // you want to make a for loop  with a possible if statement 
+    // return age
         return -1;
     }
 
@@ -18,7 +22,15 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+        //  use math.floor to get the hour and round down to the nearest hour
+        let hours = Math.floor(numOfMins / 60);
+        // use the modulo operator to get the remainder of the number or integer
+        let mins = numOfMins % 60;
+
+        let sec = numOfMins % 60;
+
+        
+        return hours + ":" + mins + ":" + sec;
     }
 
 }
