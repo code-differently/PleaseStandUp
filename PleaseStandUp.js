@@ -8,16 +8,24 @@ class PleaseStandUp {
 
    howOld(birthday){
 
-        //map month from word to integer
+        
+        //current date
+        //getFullYear()	Get the year as a four digit number (yyyy)  
+        // getMonth() Get the month as a number (0-11)
+        //getMonth()	Get the month as a number (0-11)
 
-        //get todays date
+        //map months in words as a number
 
-        //format input with todays date format
+        //format input with current date format 
 
-        //calculate difference
+        //calculate difference between year, 
+        
+        //compare difference between months, date for precission
 
         //print result
-        return -1;
+
+        const date = new Date().toString();
+        return date;
     }
 
     /*
@@ -34,7 +42,7 @@ class PleaseStandUp {
         //convert to mins
         const minutes = Math.floor(numOfMins % 60);
         //convert to seconds
-        const seconds =  Math.floor(((numOfMins - (Math.floor(numOfMins))) * 60));
+        const seconds =  Math.floor((numOfMins % 1) *60);
         //print result
 
         return `${hour}:${minutes}:${seconds}`;
