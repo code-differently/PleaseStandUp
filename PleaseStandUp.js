@@ -32,28 +32,19 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-    /*
-    Divide the entered by 60 to return the value for hours
-    let hours =  numOfMins/60
-    let hoursRounded
+    // Divide the entered by 60 to return the value for hours
+        let hours = numOfMins/60;
+        let hoursRounded = Math.floor(hours);
 
-    let remainderMins = numOfMins-(the rounded value)
-    Save the whole number(hours) and remainder returned into two separate variables
+        let mins = hours%60;
+        let minsRounded = Math.floor(mins);
 
-    Multply the remainder and 60
-    let mins = remainderMins*60
-
-    Save the whole number(minutes) and remainder returned into two separate variables
-
-    Multply the remainder and 60
-
-    Round the number(seconds) and save it assign it a variable
-
-    Return all three values with a colon between each 
-    */
-
-
-        return -1;
+    //  Save the whole number(hours) and remainder returned into two separate variables
+        let seconds = mins*60;
+        let secondsRemainder = seconds%60;
+        
+    // Return all three values with a colon between each 
+        return hoursRounded + ":" + minsRounded + ":" + secondsRemainder;
     }
 
 }
