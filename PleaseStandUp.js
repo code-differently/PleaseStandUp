@@ -29,11 +29,11 @@ class PleaseStandUp {
 
     timeConvert(num){
         let h = Math.floor(num/60);
-        let m = num - (h * 60);
-        let numOfMins = h * 60 + m;
-        let s = numOfMins - num * 60;
+        let m = Math.floor(num - (h * 60));
+        let numOfMins = (h * 60) + m;
+        let s = Math.floor((num - numOfMins) * 60);
 
-        return (h + ":" + m) + (":" + s);
+        return (h+":"+m+":"+s);
     }
 
 }
