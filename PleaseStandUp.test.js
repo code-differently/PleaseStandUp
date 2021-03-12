@@ -61,7 +61,7 @@ test("howOld test02", () => {
     let pleaseStandUp = new PleaseStandUp();
     let expected = 41;
 
-    let actual = pleaseStandUp.howOld("Janurary 19, 1980");
+    let actual = pleaseStandUp.howOld("January 19, 1980");
 
     expect(actual).toEqual(expected);
     
@@ -72,7 +72,7 @@ test("howOld test03", () => {
     // Created 3/10/2021 
     // Answer will change with time
     let pleaseStandUp = new PleaseStandUp();
-    let expected = -1;
+    let expected = -3;
 
     let actual = pleaseStandUp.howOld("December 21, 2023");
 
