@@ -6,7 +6,12 @@ class PleaseStandUp {
     (ie. if birthday = June 22, 1996 then the output should be 24)
     */
 
-   howOld(birthday){
+       howOld(birthday){
+      // Enter today's day fomratted in month, day and year
+       // Ask user to provide their birthdate in the correct format
+       // subtract user's input from today's date
+       //Return current age
+       
         return -1;
     }
 
@@ -18,9 +23,30 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+        // create variable to return time
+        let time;
+            
+        // divide numOfMins by 60 and round down to calculate number of hours
+        let hours = Math.floor(numOfMins/60);
+    
+        // calculate the number of minutes from remainder value and round down once again
+        let minutes = Math.floor(numOfMins % 60);
+    
+        // calculate seconds in a decimal format
+        let secD = numOfMins % 1;
+    
+        // convert seconds result from a decimal to an integer value
+        let secI = Math.floor(60 * secD);
+    
+        // concatenate time in hours, minutes and sec format separated by colon
+        time = hours + ":" + minutes + ":" + secI;
+    
+        // callback the function time
+        return time;
+    
+        }
+    
     }
-
-}
+    
 
  module.exports = PleaseStandUp;
