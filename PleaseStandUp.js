@@ -7,8 +7,14 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
-        return -1;
+    moment().diff(moment('20120507', 'YYYYMMDD'), 'years')
+        return birthday;
     }
+
+    // DEFINE BIRTHDAY
+    // DEFINE TODAYS DATE
+    // SUBTRACT BIRTHDAY FROM TODAYS DATE
+    // RETURN DIFFERENCE
 
     /*
     Have the function timeConvert(numOfMins) take the numOfMins parameter being passed and 
@@ -18,8 +24,21 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+            // calculate number of hours 
+            // divide number by 60
+            // round the answer down
+           let hours = Math.floor(numOfMins / 60);
+           //calculate minutes
+           let minutes = numOfMins % 60;
+           //calculate seconds
+            let seconds = minutes % 60 / 60;
+    
+        // craft our output
+           return `${hours}:${minutes}:${seconds}`; // hour ":" min ":" seconds
+        
     }
+
+   
 
 }
 
