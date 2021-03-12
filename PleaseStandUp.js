@@ -7,6 +7,20 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
+  
+    // convert birthday into a numeric value
+
+    // convert current date into a numeric value
+
+    // subtract birthday numeric value from current date value to get the numeric value of time elapsed
+
+    // convert the time elapsed value into years
+
+    // round down the converted years value
+
+    // return the rounded years value
+
+
         return -1;
     }
 
@@ -18,6 +32,27 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
+    /*
+    Divide the entered by 60 to return the value for hours
+    let hours =  numOfMins/60
+    let hoursRounded
+
+    let remainderMins = numOfMins-(the rounded value)
+    Save the whole number(hours) and remainder returned into two separate variables
+
+    Multply the remainder and 60
+    let mins = remainderMins*60
+
+    Save the whole number(minutes) and remainder returned into two separate variables
+
+    Multply the remainder and 60
+
+    Round the number(seconds) and save it assign it a variable
+
+    Return all three values with a colon between each 
+    */
+
+
         return -1;
     }
 
