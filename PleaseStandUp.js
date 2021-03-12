@@ -7,6 +7,11 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
+       // enter the date of birth yy/mm/dd and assign it to a const
+       // get todays date and assign it to a const
+       // take the difference of the two and assign it to a const
+       // divid the const of the diff with milliday using Math.floor function
+       
         return -1;
     }
 
@@ -17,9 +22,16 @@ class PleaseStandUp {
     minutes, and seconds with colons.
     */
 
-    timeConvert(numOfMins){
-        return -1;
-    }
+    timeConvert(num){
+        //num dived by 60
+        //minutes will be rem of the first division
+        //the reminder of that divide by 60
+        //the hr in decimal two places are added to make the seconds 
+            var h = Math.floor(num/ 60);
+            var m = (num % 60 );
+            var s = (num/60).toFixed(2);
+         return  ( h+":"+ m) +(":"+ s);
+    
 
 }
 
