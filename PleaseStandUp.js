@@ -5,8 +5,6 @@ class PleaseStandUp {
     return the age of a person with the date as their birthday.
     (ie. if birthday = June 22, 1996 then the output should be 24)
     */
-
-
        
        // Split up the input to a month, day, year
        // Set up placeholders for today's month, day, and year
@@ -20,32 +18,6 @@ class PleaseStandUp {
             // Else this person is "this year" - "year born" years old
             
        
-            // howOld(birthday){
-            //     const months =  {
-            //         january: 1,
-            //         february: 2,
-            //         march: 3,
-            //         april: 4,
-            //         may: 5,
-            //         june: 6,
-            //         july: 7,
-            //         august: 8,
-            //         septmber: 9,
-            //         october: 10,
-            //         november: 11,
-            //         december: 12
-            //     }
-         
-            //     let birthDate = birthday.split(" ");
-            //     let bMonth = bDay[0].toLowerCase();
-            //     let bDay = bDay[1].slice(0, -1);
-            //     let bYear = bDay[2];
-            //     let todayMonth = "March";
-            //     let todayDay = 11;
-            //     let todayYear = 2021;
-         
-            //     let yearsOld = todayYear - bYear;
-            //     months.entries(month)
 
     /*
     Have the function timeConvert(numOfMins) take the numOfMins parameter being passed and 
@@ -55,9 +27,6 @@ class PleaseStandUp {
     */
 
     // Input is number of minutes
-   
-    
-    
     // Design output with colons
     // Output is number of hours:minutes:seconds
 
@@ -68,7 +37,7 @@ class PleaseStandUp {
         let minutesSeconds = numOfMins % 60;
         // Take last remainder and remove decimal
         let minutes = Math.floor(minutesSeconds);
-        // Take remainder of hours, subtract minutes and multiply decimal portion by 60
+        // To get seconds Take remainder of hours, subtract minutes and multiply decimal portion by 60
         let seconds = Math.floor((minutesSeconds - minutes) * 60);
         // Craft return with semicolons
         return `${hours}:${minutes}:${seconds}`;
