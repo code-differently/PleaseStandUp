@@ -7,6 +7,23 @@ class PleaseStandUp {
     */
 
    howOld(birthday){
+  
+    // convert birthday into a numeric value
+
+    // convert current date into a numeric value
+
+    // subtract birthday numeric value from current date value to get the numeric value of time elapsed
+
+    // convert the time elapsed value into years
+
+    // round down the converted years value
+
+    // return the rounded years value
+
+    let date =  new Date().getFullYear();
+    let age = date-birthyear
+    
+        return age;
         return -1;
     }
 
@@ -18,7 +35,20 @@ class PleaseStandUp {
     */
 
     timeConvert(numOfMins){
-        return -1;
+        // Divide the entered by 60 to return the value for hours
+            let hours = numOfMins/60;
+            let hoursRounded = Math.floor(hours);
+    
+            let mins = numOfMins%60;
+            let minsRounded = Math.floor(mins);
+            let minsConvert = minsRounded%60
+    
+        //  Save the whole number(hours) and remainder returned into two separate variables
+            let seconds = mins*60;
+            let secondsRemainder = seconds%60;
+            
+        // Return all three values with a colon between each 
+            return hoursRounded + ":" + minsConvert + ":" + secondsRemainder; 
     }
 
 }
